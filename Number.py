@@ -46,7 +46,18 @@ def create_account(users):
             create_account(users)
         else:
             break
-
+def log_in(users):
+    username = input('Enter Your Username')
+    if username is in users:
+        password = input('Enter Uour Password')
+        if password = users[username][0]:
+            return users[username][0:]
+    if username is not in users:
+        choice = input('This username does not exist in the data bases. Would you like to (retry) or (create user)')
+        if choice == 'retry' or 'Retry'
+            return log_in(users)
+        if choice == 'create user' or 'Create user' or Create User':
+            retrun create_user
 
 
 
