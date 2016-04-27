@@ -59,6 +59,28 @@ def log_in(users):
         if choice == 'create user' or 'Create user' or Create User':
             retrun create_user
 
+def make(number):
+    guess = input('Guess a number 1 to 100')
+    if guess > number:
+        print(guess)('Is too large guess a smaller number')
+        return 1
+    elif guess < number:
+        print(guess)('Is too small guess a larger number')
+        return 1
+    elif guess == number:
+        print('You guessed it!!!!!)
+        return 2
+
+
+def play():
+    number = random.randint(1,100)
+    P1tn = False
+    P2th = True
+    Guesses = 0
+    While P1tn == True:
+        make
+   
+
 
 
 
