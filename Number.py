@@ -23,7 +23,7 @@ def is_it(number):
                   print(guess)
     if type(guess) is str:
         print('Invalid input')
-        is_it(number)
+     
 
 is_it(number)
 
@@ -78,7 +78,11 @@ def play():
     P2th = True
     Guesses = 0
     While P1tn == True:
-        make
+        if make(number) == 2:
+            P1pt += Guesses* 10
+        if make(number) == 1:
+            Guesses += 1
+    
    
 
 
