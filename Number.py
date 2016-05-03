@@ -78,6 +78,10 @@ def play():
     P2th = True
     Guesses = 0
     While P1tn == True:
+
+        if guess > 6:
+            print('you are out of guesses')
+            retrun play()
         if make(number) == 2:
             P1pt += Guesses* 10
         if make(number) == 1:
